@@ -1,0 +1,203 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "ScaleTail",
+  "projectDescription": "A curated collection of Docker Compose configurations for running popular self-hosted services with Tailscale sidecar containers for secure networking.",
+  "theme": "aspen",
+  "primaryColor": "#1F2937",
+  "lightColor": "#3B82F6",
+  "darkColor": "#1E40AF",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "tailscale-concepts"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/sidecar-pattern",
+              "concepts/tailscale-serve-funnel",
+              "concepts/docker-networking",
+              "concepts/environment-variables"
+            ]
+          },
+          {
+            "group": "Setup Guide",
+            "pages": [
+              "setup/prerequisites",
+              "setup/authentication",
+              "setup/configuration",
+              "setup/deployment"
+            ]
+          },
+          {
+            "group": "Networking & Security",
+            "pages": [
+              "services/adguardhome",
+              "services/adguardhome-sync",
+              "services/caddy",
+              "services/ddns-updater",
+              "services/nessus",
+              "services/netbox",
+              "services/pihole",
+              "services/pocket-id",
+              "services/technitium",
+              "services/traefik",
+              "services/tailscale-exit-node"
+            ]
+          },
+          {
+            "group": "Media & Entertainment",
+            "pages": [
+              "services/audiobookshelf",
+              "services/bazarr",
+              "services/booklore",
+              "services/immich",
+              "services/jellyfin",
+              "services/jellyseerr",
+              "services/kavita",
+              "services/miniflux",
+              "services/navidrome",
+              "services/picard",
+              "services/plex",
+              "services/prowlarr",
+              "services/qbittorrent",
+              "services/radarr",
+              "services/sonarr",
+              "services/tautulli"
+            ]
+          },
+          {
+            "group": "Productivity & Collaboration",
+            "pages": [
+              "services/clipcascade",
+              "services/docmost",
+              "services/excalidraw",
+              "services/flatnotes",
+              "services/forgejo",
+              "services/ghost",
+              "services/linkding",
+              "services/mattermost",
+              "services/nextcloud",
+              "services/vaultwarden"
+            ]
+          },
+          {
+            "group": "Development Tools",
+            "pages": [
+              "services/arcane",
+              "services/changedetection",
+              "services/coder",
+              "services/cyberchef",
+              "services/dockhand",
+              "services/dozzle",
+              "services/portainer",
+              "services/searxng"
+            ]
+          },
+          {
+            "group": "Monitoring & Analytics",
+            "pages": [
+              "services/beszel-hub",
+              "services/beszel-agent",
+              "services/speedtest-tracker",
+              "services/uptime-kuma"
+            ]
+          },
+          {
+            "group": "Dashboards",
+            "pages": [
+              "services/glance",
+              "services/homepage",
+              "services/homarr"
+            ]
+          },
+          {
+            "group": "Smart Home & IoT",
+            "pages": [
+              "services/home-assistant"
+            ]
+          },
+          {
+            "group": "Utilities",
+            "pages": [
+              "services/convertx",
+              "services/gotify",
+              "services/ntfy",
+              "services/lube-logger",
+              "services/homebox"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Templates & Contributing",
+        "groups": [
+          {
+            "group": "Templates",
+            "pages": [
+              "templates/service-template",
+              "templates/compose-structure"
+            ]
+          },
+          {
+            "group": "Contributing",
+            "pages": [
+              "contributing/getting-started",
+              "contributing/adding-services",
+              "contributing/guidelines"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Configuration",
+            "pages": [
+              "reference/environment-variables",
+              "reference/tailscale-options",
+              "reference/docker-options",
+              "reference/troubleshooting"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/custom-configurations",
+              "advanced/security-hardening",
+              "advanced/performance-tuning",
+              "advanced/arm-support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "95+ pre-configured Docker Compose examples with Tailscale sidecar integration",
+    "Secure network-only access via Tailscale's zero-trust mesh network",
+    "Support for Tailscale Serve and Funnel for public/private service exposure",
+    "Template-based service configuration for easy customization",
+    "Comprehensive coverage of self-hosted services across networking, media, productivity, and development",
+    "Health checks and dependency management for reliable deployments",
+    "MagicDNS and HTTPS support for seamless service discovery"
+  ],
+  "publicApiSurface": [
+    "Docker Compose configurations for 95+ services",
+    "Service template for creating new Tailscale sidecar configurations",
+    "Tailscale Serve/Funnel JSON configuration format",
+    "Environment variable configuration (.env files)",
+    "Health check endpoints for container monitoring",
+    "Volume mount patterns for persistent data",
+    "Network mode: service:<container> sidecar pattern"
+  ]
+}
